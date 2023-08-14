@@ -1,5 +1,3 @@
-# co0e846448b251532b6c0aa00
-
 Quick start:
 # Simple 15-digit Password Generator
 
