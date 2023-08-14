@@ -1,0 +1,42 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1> Generate 
+            <span id="diffcolor">15-digit</span> 
+            <br>random passwords 
+        </h1>
+        <p> Never use an insecure password again.</p>
+        <div class="selecter">
+            <!-- insert future password length option here -->
+            <div class="selector-container">
+                <label for="password-type"> Password Type</label>
+                <select name="" id="password-type">
+                    <!-- <option value="" disabled>...</option> -->
+                    <option value="1">complex (default)</option>
+                    <option value="2">alphanumberic</option>
+                </select>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button class = "btn" id="btn"> Generate password</button>
+            <button class= "btn" id="clear-btn"> Clear passwords</button>
+            <svg height="20" width="300">
+            <line x1="0" y1="20" x2="420" y2="20" style="stroke:rgb(255,255,255);stroke-width:2" />
+            </svg>
+        </div>
+        <div class="pass" id="gen-passwords">
+        </div>
+        <script type=module src="index.js"></script>
+    </body>
+</html>
+
+<!-- for future expansion(custom password length) -->
+<!-- <div class="selector-container">
+                <label for="password-length"> Length</label> -->
+<!-- <input  type="number" min="0" value="8"> -->
+<!-- only type positive integer numbers in the input -->
+<!-- <input id="password-length" type="number" value="8" min="0"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"> -->
+<!-- </div> -->
